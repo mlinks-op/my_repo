@@ -5,3 +5,5 @@ For help
 ***Use kubectl config --help************************
 
 $ k run ngnix-yaml --image=nginx --dry-run=client -o yaml > pod.yaml
+
+kubectl exec -it ngnix -- /bin/sh
