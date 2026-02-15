@@ -1,0 +1,7 @@
+# set k as alias for Kubectl 
+********$ alias k='kubectl'********
+For help 
+********Use kubectl run --help********
+***Use kubectl config --help************************
+
+$ k run ngnix-yaml --image=nginx --dry-run=client -o yaml > pod.yaml
