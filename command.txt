@@ -1,9 +1,27 @@
-# set k as alias for Kubectl 
-********$ alias k='kubectl'********
-For help 
-********Use kubectl run --help********
-***Use kubectl config --help************************
 
-$ k run ngnix-yaml --image=nginx --dry-run=client -o yaml > pod.yaml
+/ # 
+/ # 
+/ # 
+/ # 
+/ # 
+/ # ^C
 
-kubectl exec -it ngnix -- /bin/sh
+/ # ^C
+
+/ # ^C
+
+/ # ^C
+
+/ # ^C
+
+/ # ^C
+
+/ # 
+/ # 
+/ # 
+/ # 
+/ # 
+/ # exit
+ge=busybox -- sh > command.txt
+All commands and output from this session will be recorded in container logs, incSession ended, resume using 'kubectl attach debug -c debug -i -t' command when the pod is running
+pod "debug" deleted from default namespace

@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: htttp
+  name: htttp
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: htttp
+  template:
+    metadata:
+      labels:
+        app: htttp
+    spec:
+      containers:
+      - image: httpd
+        name: httpd
+
