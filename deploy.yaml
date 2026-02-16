@@ -1,20 +1,28 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  name: htttp
   labels:
     app: htttp
-  name: htttp
+
 spec:
-  replicas: 10
+  replicas: 20
+
   selector:
     matchLabels:
       app: htttp
+
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+
   template:
     metadata:
       labels:
         app: htttp
     spec:
       containers:
-      - image: httpd
-        name: httpd
-
+      - name: httpd
+        image: httpd:alpine3.18
